@@ -1,7 +1,13 @@
+import Hero from "./components/Hero";
+import Showcase from "./components/Showcase";
+import Updates from "./components/Updates";
+
 export default function Home() {
   return (
-    <main>
-      <section></section>
-    </main>
+    <>
+      <Hero />
+      <Showcase />
+      <Updates />
+    </>
   );
 }
