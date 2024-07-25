@@ -3,7 +3,7 @@ import Card from "./Card";
 
 function Showcase() {
   return (
-    <section>
+    <section className="flex flex-wrap justify-center items-center gap-4">
       {MOTOR_BIKES.map((bike) => (
         <Card title={bike.title} img={bike.img} key={bike.key} />
       ))}

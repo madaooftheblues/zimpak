@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import Perks from "./components/Perks";
 import Showcase from "./components/Showcase";
 import Updates from "./components/Updates";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Showcase />
       <Updates />
+      <Perks />
     </>
   );
 }

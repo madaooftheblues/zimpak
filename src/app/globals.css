@@ -3,16 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: #231f20;
+  --secondary: #efe6dd;
+  --accent: #bb4430;
+  --light: #efe6dd;
+  --dark: #231f20;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --primary: #efe6dd;
+    --secondary: #231f20;
+    --accent: #bb4430;
+    --light: #efe6dd;
+    --dark: #231f20;
   }
 }
 
@@ -20,4 +24,19 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/public/Inter.ttf");
+}
+
+section {
+  padding: 2.5rem;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin-inline: auto;
+  margin-block: 3rem;
 }

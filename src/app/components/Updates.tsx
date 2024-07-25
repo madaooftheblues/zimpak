@@ -1,7 +1,7 @@
 function Updates() {
   return (
-    <section>
-      <h3>Updates</h3>
+    <section className="wrapper">
+      <h1>Updates</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
         nesciunt expedita cum at exercitationem facere nihil totam. Molestiae
