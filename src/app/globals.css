@@ -40,6 +40,7 @@ button {
   color: var(--light);
   padding: 1em;
   border-radius: 0.5rem;
+  min-width: 6rem;
 }
 
 .wrapper {

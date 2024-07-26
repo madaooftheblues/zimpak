@@ -1,5 +1,5 @@
 "use client";
-
+import Swal from "sweetalert2";
 import { FormEvent } from "react";
 import InputGroup from "./InputGroup";
 
@@ -10,25 +10,49 @@ const ContactForm = () => {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    console.log(event.currentTarget);
-
     formData.append("access_key", `${process.env.contactKey}`);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    });
-    const result = await response.json();
-    if (result.success) {
-      console.log(result);
-      form.reset();
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        console.log(result);
+        Swal.fire({
+          title: "Success!",
+          text: "Message sent.",
+          icon: "success",
+          confirmButtonText: "OK",
+          buttonsStyling: false,
+        });
+        form.reset();
+      } else {
+        Swal.fire({
+          title: "Oops...",
+          text: "Something went wrong!",
+          icon: "error",
+          confirmButtonText: "OK",
+          buttonsStyling: false,
+        });
+      }
+    } catch (e) {
+      Swal.fire({
+        title: "Oops...",
+        text: "Something went wrong!",
+        icon: "error",
+        confirmButtonText: "OK",
+        buttonsStyling: false,
+      });
     }
   }
 
