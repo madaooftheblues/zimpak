@@ -1,3 +1,4 @@
+import ContactForm from "./components/ContactForm";
 import Hero from "./components/Hero";
 import Perks from "./components/Perks";
 import Showcase from "./components/Showcase";
@@ -10,6 +11,7 @@ export default function Home() {
       <Showcase />
       <Updates />
       <Perks />
+      <ContactForm />
     </>
   );
 }
