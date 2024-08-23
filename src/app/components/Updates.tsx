@@ -1,12 +1,12 @@
 function Updates() {
   return (
     <section className="wrapper">
-      <h2 className="text-2xl">Updates</h2>
+      <h2 className="text-2xl">Our Commitment to Zimbabwe</h2>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
-        nesciunt expedita cum at exercitationem facere nihil totam. Molestiae
-        quaerat, tempore quo nobis eius explicabo laudantium quos et tempora!
-        Quae, optio.
+        We are proud to contribute to the development of Zimbabwe by providing
+        affordable and reliable transportation options. Our motorcycles are not
+        just vehicles; they are a means to empower individuals and communities,
+        enhancing mobility and economic opportunities.
       </p>
     </section>
   );

@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import Perks from "./components/Perks";
 import Showcase from "./components/Showcase";
 import Updates from "./components/Updates";
+import Slider from "./components/Slider";
+import { AWARDS, CERTS } from "./constants";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <Showcase />
       <Updates />
       <Perks />
+      <Slider title="Certifications" slides={CERTS} />
+      <Slider title="Awards" slides={AWARDS} />
       <ContactForm />
     </>
   );
