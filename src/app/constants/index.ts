@@ -1,13 +1,95 @@
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "products", label: "Products" },
+  { href: "/models", key: "models", label: "Models" },
   { href: "/about", key: "about", label: "About Us" },
 ];
 
 export const MOTOR_BIKES = [
-  { key: "", img: "/m1.png", title: "ZP 125" },
-  { key: "", img: "/m4.png", title: "ZP 100" },
-  { key: "", img: "/m5.png", title: "ZP 70" },
+  {
+    id: 1,
+    img: "/m5.png",
+    title: "ZP 72",
+    quirk: "The Nimble Navigator",
+    descShort:
+      "72cc of urban agility. Perfect for city commutes and tight spaces. Fuel-efficient and easy to handle, it's your ideal daily companion",
+    desc: "Compact power meets urban agility in the ZP 72. This 72cc dynamo is perfect for zipping through Harare's bustling streets or navigating the charming roads of Bulawayo. Fuel-efficient and easy to handle, the ZP 72 is your ideal companion for daily commutes and weekend adventures alike. Experience the joy of effortless riding with our entry-level marvel.",
+    specs: {
+      engine: "4-Stroke OHC Air-Cooled",
+      displacement: "72cm³",
+      boreAndStroke: "47.0 x 41.4mm",
+      compressionRatio: "9.3:1",
+      clutch: "Multiple Wet Clutch",
+      transmission: "4 Speed Constant Mesh",
+      starting: "Kick Start",
+      frame: "Backbone Type",
+      dimensions: "1897 x 751 x 1014mm",
+      groundClearance: "136mm",
+      petrolCapacity: "8.5 litres (Reserve: 1.0 litre)",
+      tireAtFront: "2.25 - 17 (4 PR)",
+      tireAtBack: "2.50 - 17 (4 PR)",
+      dryWeight: "82kg",
+    },
+    features: [
+      "Lightweight frame for easy maneuverability",
+      "Decent Fuel Average",
+      "Economical",
+    ],
+    colors: ["#bbbebf", "#0975bf", "#ed1c24", "#231f20", "#00a54f"],
+  },
+  {
+    id: 2,
+    img: "/m4.png",
+    title: "ZP 100",
+    quirk: "The Versatile Voyager",
+    descShort:
+      "100cc of balanced performance. Tackle diverse Zimbabwean roads with confidence. City-friendly, yet highway-capable.",
+    desc: "Strike the perfect balance between power and efficiency with the ZP 100. This 100cc all-rounder is built to tackle Zimbabwe's diverse landscapes, from the scenic routes of the Eastern Highlands to the wide-open roads of the Midlands. With ample power for highways and the agility for city traffic, the ZP 100 adapts to your journey, wherever it may lead.",
+    specs: {
+      engine: "4-Stroke OHC Air-Cooled",
+      displacement: "97.1cm³",
+      boreAndStroke: "50.0 x 49.5mm",
+      compressionRatio: "9.3:1",
+      clutch: "Multiple Wet Clutch",
+      transmission: "4 Speed Constant Mesh",
+      starting: "Kick Start",
+      frame: "Backbone Type",
+      dimensions: "1986 x 718 x 1050mm",
+      groundClearance: "156mm",
+      petrolCapacity: "9.7 litres (Reserve: 1.5 litre)",
+      tireAtFront: "2.75 - 18 (4 PR)",
+      tireAtBack: "2.75 - 18 (6 PR)",
+      suspensionAtFront: "Telescopic Fork 94mm Travel",
+      suspensionAtBack: "Swing Arm 84mm Travel",
+      dryWeight: "96kg",
+      finalDrive: "Roller Chain",
+      seatHeight: "798mm",
+      wheelBase: "1226mm",
+    },
+    features: [
+      "Lightweight frame for easy maneuverability",
+      "Decent Fuel Average",
+      "Economical",
+      "Excellent Drive Chain ",
+    ],
+    colors: ["#bbbebf", "#0975bf", "#ed1c24", "#231f20", "#00a54f"],
+  },
+
+  {
+    id: 3,
+    img: "/m1.png",
+    title: "ZP 125",
+    quirk: "The Mighty Maverick",
+    descShort:
+      "125cc of pure power. Designed for long rides and heavy loads. Conquer any terrain with our top-tier model.",
+    desc: "Unleash the thrill of the open road with our flagship ZP 125. Boasting a robust 125cc engine, this powerhouse is designed for those who crave performance and long-distance comfort. Whether you're embarking on an epic ride to Victoria Falls or carrying heavy loads through rural terrain, the ZP 125 delivers unwavering strength and reliability. Dominate any path with confidence and style.",
+    specs: {},
+    features: [
+      "Lightweight frame for easy maneuverability",
+      "Decent Fuel Average",
+      "Economical",
+    ],
+    colors: ["#bbbebf", "#0975bf", "#ed1c24", "#231f20", "#00a54f"],
+  },
 ];
 
 export const CERTS = [

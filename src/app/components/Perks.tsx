@@ -6,19 +6,16 @@ const Perks = () => {
       <div className="bg-primary text-secondary p-8 ">
         <ul className="grid gap-4 list-disc">
           <li>
-            Quality You Can Trust
+            Crafted with Precision
             <br />
             Our motorcycles are crafted with precision and care, using the best
-            materials and manufacturing processes. We ensure each motorcycle
-            meets the highest standards of quality and safety before it reaches
-            our customers.
+            materials and manufacturing processes.
           </li>
           <li>
             Affordable Prices
             <br />
-            We believe in providing top-notch motorcycles at competitive prices.
             Our goal is to make reliable transportation accessible to everyone
-            in Zimbabwe, without compromising on quality.
+            in Zimbabwe, without compromising on standards.
           </li>
           <li>
             Expertise and Experience

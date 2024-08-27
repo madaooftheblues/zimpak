@@ -15,7 +15,7 @@ const Navbar = () => {
         <Image src={"/logo.png"} alt={"ZimPak logo"} width={200} height={50} />
       </Link>
       {/* Burger menu icon */}
-      <div className="md:hidden place-self-end self-center">
+      <div className="md:hidden place-self-end self-center mr-4">
         {isOpen ? (
           <ClearIcon onClick={() => setIsOpen(false)}></ClearIcon>
         ) : (
@@ -28,7 +28,11 @@ const Navbar = () => {
         }`}
       >
         {NAV_LINKS.map((link) => (
-          <Link href={link.href} key={link.key}>
+          <Link
+            href={link.href}
+            key={link.key}
+            className="hover:text-accent text-lg font-semibold"
+          >
             {link.label}
           </Link>
         ))}

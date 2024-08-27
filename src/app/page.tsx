@@ -15,7 +15,7 @@ export default function Home() {
       <Perks />
       <Slider title="Certifications" slides={CERTS} />
       <Slider title="Awards" slides={AWARDS} />
-      <ContactForm />
+      <ContactForm id={"contact"} />
     </>
   );
 }

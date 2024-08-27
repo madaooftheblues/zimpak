@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Hero() {
   return (
     <section className="h-min-96 text-white relative py-28">
@@ -12,6 +14,9 @@ function Hero() {
           <br />
           Pakistani motorcycles for Zimbabwean roads.
         </p>
+        <Link href="/models">
+          <button className="px-4 py-2 rounded mt-4">Explore Our Models</button>
+        </Link>
       </div>
     </section>
   );

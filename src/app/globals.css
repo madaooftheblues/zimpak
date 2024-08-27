@@ -46,7 +46,7 @@ button {
 .wrapper {
   max-width: 960px;
   margin-inline: auto;
-  margin-block: 3rem;
+  margin-block: 4rem;
 }
 
 .embla {
@@ -109,11 +109,8 @@ button {
   user-select: none;
 }
 .embla__controls {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  justify-content: space-between;
-  gap: 1.2rem;
-  margin-top: 1.8rem;
+  display: flex;
+  justify-content: flex-end;
 }
 .embla__buttons {
   display: grid;

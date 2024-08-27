@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import { FormEvent } from "react";
 import InputGroup from "./InputGroup";
 
-const ContactForm = () => {
+const ContactForm = ({ id }: { id: string }) => {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -57,9 +57,9 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="wrapper relative">
-      <form onSubmit={handleSubmit} className="grid gap-4">
-        <h2 className="place-self-center text-2xl font-bold">Contact Us</h2>
+    <section className="wrapper relative" id={id}>
+      <form onSubmit={handleSubmit} className="grid gap-8">
+        <h2 className="place-self-center text-2xl font-semibold">Contact Us</h2>
         <InputGroup
           id="name"
           label="Name"

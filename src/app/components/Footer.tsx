@@ -8,7 +8,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 const Footer = ({ children }: { children: React.ReactNode }) => {
   return (
     <footer className="text-center p-8 border-t-2 border-primary mt-auto">
-      <div className="grid gap-6 md:flex flex-wrap">
+      <div className="grid place-items-center gap-6 md:flex flex-wrap">
         <Link href="/">
           <Image
             src={"/logo.png"}
@@ -44,7 +44,7 @@ const Footer = ({ children }: { children: React.ReactNode }) => {
           </a>
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-8">
         <p>Copyright © ZimPak {new Date().getFullYear()}</p>
         <p>All Rights Reserved.</p>
       </div>
